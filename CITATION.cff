@@ -7,6 +7,7 @@ authors:
   given-names: "Konstantinos"
 - family-names: "Typaldos"
   given-names: " Athanasios-Christos"
+  given-names: " Christos"
 title: "A Simple Protocol for Resizing MongoDB Clusters (Source Code)"
 version: 1.0.0
 date-released: 2022-03-20
