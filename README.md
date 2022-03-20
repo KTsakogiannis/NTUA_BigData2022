@@ -8,8 +8,8 @@
 
 ## Features
 
-- 1 (almost) real-time monitoring
-- 2 rule based using Markov Decision Process
+- Almost real-time monitoring
+- Rule based using Markov Decision Process
 - 3 Automatic MongoDB resizing
 
 ## Technology Stack
