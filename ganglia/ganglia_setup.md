@@ -1,4 +1,4 @@
-## BigData1 (master with gmetad)
+## Compile Ganglia from source
 
 ```sh
 add-apt-repository ppa:deadsnakes/ppa
@@ -6,6 +6,8 @@ apt update
 apt-get install python2 make gcc rrdtool pkg-config checkinstall
 apt-get install libapr1 libc6 libconfuse2 libganglia1 libpcre3 zlib1g
 ```
+> Install dependencies
+
 ```sh
 apt-get install librrd-dev libapr1-dev libconfuse-dev libexpat-dev libpcre3-dev zlib1g
 ```
