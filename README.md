@@ -8,21 +8,18 @@
 
 ## Features
 
-- 1
-- 2
-- 3
-- 4
-- 5
+- 1 (almost) real-time monitoring
+- 2 rule based using Markov Decision Process
+- 3 Automatic MongoDB resizing
 
-## Tech
+## Technology Stack
 
 Within the project, a number of open source projects is used to work properly:
 
-- [Ubuntu] - ...
-- [MongoDB] - ...
-- [Ganglia] - ...
-- [Python] - ...
-- [PHP] - ...
+- [Ubuntu] - 20.04.3 LTS
+- [MongoDB] - v5.0.5
+- [Ganglia] - v3.7.2
+- [Python] - v2.7 (Ganglia), v3.8 (Protocol)
 
 ## Services
 
