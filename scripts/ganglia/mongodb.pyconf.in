@@ -1,0 +1,75 @@
+modules {
+    module {
+        name = "<SERVER_NAME>"
+        language = "python"
+        param host {
+            value = localhost
+        }
+        param port {
+            value = <PORT>
+        }
+        param server_name {
+            value = <SERVER_NAME>
+        }
+        param time_max {
+            value = 60
+        }
+    }
+}
+
+collection_group {
+    collect_every = 10
+    time_threshold = 15
+    metric {
+        name = "<SERVER_NAME>_mongodb_conn_current"
+        title = "Current Connections"
+    }
+    metric {
+        name = "<SERVER_NAME>_mongodb_conn_available"
+        title = "Current Available Connections"
+    }
+    metric {
+        name = "<SERVER_NAME>_mongodb_conn_total"
+        title = "Current Total Connections"
+    }
+    metric {
+        name = "<SERVER_NAME>_mongodb_net_bytes_in"
+        title = "Bytes Received / sec"
+    }
+    metric {
+        name = "<SERVER_NAME>_mongodb_net_bytes_out"
+        title = "Bytes Sent / sec"
+    }
+    metric {
+        name = "<SERVER_NAME>_mongodb_op_count_insert"
+        title = "Insert ops / sec"
+    }
+    metric {
+        name = "<SERVER_NAME>_mongodb_op_count_query"
+        title = "Queries / sec"
+    }
+    metric {
+        name = "<SERVER_NAME>_mongodb_op_count_update"
+        title = "Update ops / sec"
+    }
+    metric {
+        name = "<SERVER_NAME>_mongodb_op_count_delete"
+        title = "Delete ops / sec"
+    }
+    metric {
+        name = "<SERVER_NAME>_mongodb_op_count_getmore"
+        title = "Getmore ops / sec"
+    }
+    metric {
+        name = "<SERVER_NAME>_mongodb_op_count_command"
+        title = "Command ops / sec"
+    }
+    metric {
+        name = "<SERVER_NAME>_mongodb_mem_resident"
+        title = "Resident Memory"
+    }
+    metric {
+        name = "<SERVER_NAME>_mongodb_mem_virtual"
+        title = "Virtual Memory"
+    }
+}
