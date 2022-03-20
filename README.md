@@ -87,8 +87,8 @@ use dbname
 sh.enableSharding("dbname")
 ```
 
-### Create collection colname via ycsb load and then
+### Create collection usertable via ycsb load and then
 ```sh
-db.colname.createIndex({ _id: 1})
-sh.shardCollection( "dbname.colname", { '_id': 1 } )
+db.usertable.createIndex({ _id: 1})
+sh.shardCollection( "dbname.usertable", { '_id': 1 } )
 ```
