@@ -10,7 +10,7 @@
 
 - Almost real-time monitoring
 - Rule based using Markov Decision Process
-- 3 Automatic MongoDB resizing
+- Automatic MongoDB resizing
 
 ## Technology Stack
 
