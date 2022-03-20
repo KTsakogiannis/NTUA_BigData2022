@@ -1,4 +1,4 @@
-## Compile Ganglia from source
+## Compile Ganglia and Ganglia-Web from source
 
 ```sh
 add-apt-repository ppa:deadsnakes/ppa
@@ -11,7 +11,7 @@ apt-get install libapr1 libc6 libconfuse2 libganglia1 libpcre3 zlib1g
 ```sh
 apt-get install librrd-dev libapr1-dev libconfuse-dev libexpat-dev libpcre3-dev zlib1g
 ```
-## get and make sources
+> Get and make sources
 
 ```sh
 wget -O ganglia.gz https://sourceforge.net/projects/ganglia/files/latest/download
@@ -31,5 +31,19 @@ vim Makefile
 checkinstall
 ```
 ```sh
+# install packages with
 dpkg -i ganglia-*.deb
 ```
+> In VMs of monogdb shards
+```
+# send only the ganglia compiled package
+add-apt-repository ppa:deadsnakes/ppa
+apt update
+apt-get install libpython2.7
+sudo -H pip install pymongo # for mongodb plugin
+dpkg -i ganglia-*.deb
+```
+> After compiling
+Remember to create gmetad.conf and gmond.conf and move them to /usr/local/etc
+> Easy solution
+Use the above compiled packages, list contents with `dpkg -c ganglia-*.deb` to check the installing paths
