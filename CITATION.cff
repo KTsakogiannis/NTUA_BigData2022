@@ -9,6 +9,5 @@ authors:
   given-names: " Athanasios-Christos"
 title: "A Simple Protocol for Resizing MongoDB Clusters (Source Code)"
 version: 1.0.0
-doi: 10.5281/zenodo.1234
 date-released: 2022-03-20
 url: "https://github.com/KTsakogiannis/NTUA_BigData2022"
